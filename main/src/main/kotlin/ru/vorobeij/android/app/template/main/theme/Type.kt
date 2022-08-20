@@ -1,4 +1,4 @@
-package ru.vorobeij.android.app.android.template.ui.theme
+package ru.vorobeij.android.app.template.main.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

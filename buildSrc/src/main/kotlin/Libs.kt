@@ -11,6 +11,7 @@ object Versions {
 
     const val compose = "1.2.1"
     const val compose_compiler = "1.3.0"
+    const val androidx = "1.8.0"
 }
 
 /**
@@ -22,10 +23,17 @@ object Libs {
     const val kotlin = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$${Versions.kotlin}"
 
     const val activity_compose = "androidx.activity:activity-compose:1.5.1"
+    const val androidx_core = "androidx.core:core:${Versions.androidx}"
+    const val androidx_core_ktx = "androidx.core:core-ktx:${Versions.androidx}"
+    const val compose_foundation = "androidx.compose.foundation:foundation:${Versions.compose}"
+    const val compose_foundation_layout = "androidx.compose.foundation:foundation-layout:${Versions.compose}"
+    const val compose_runtime = "androidx.compose.runtime:runtime:${Versions.compose}"
     const val compose_ui = "androidx.compose.ui:ui:${Versions.compose}"
+    const val compose_ui_graphics = "androidx.compose.ui:ui-graphics:${Versions.compose}"
+    const val compose_ui_text = "androidx.compose.ui:ui-text:${Versions.compose}"
     const val compose_ui_tooling = "androidx.compose.ui:ui-tooling:${Versions.compose}"
     const val compose_ui_tooling_preview = "androidx.compose.ui:ui-tooling-preview:${Versions.compose}"
-    const val core_ktx = "androidx.core:core-ktx:1.8.0"
+    const val compose_ui_unit = "androidx.compose.ui:ui-unit:${Versions.compose}"
     const val lifecycle_runtime_ktx = "androidx.lifecycle:lifecycle-runtime-ktx:2.5.1"
     const val material3 = "androidx.compose.material3:material3:1.0.0-alpha16"
 }

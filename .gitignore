@@ -13,5 +13,6 @@
 .externalNativeBuild
 .cxx
 local.properties
-/app/lint-report.*
-/app/lint-results.txt
+lint-report.*
+lint-results.txt
+lint-output.txt

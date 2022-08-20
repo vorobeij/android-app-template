@@ -1,4 +1,4 @@
-package ru.vorobeij.android.app.android.template.ui.theme
+package ru.vorobeij.android.app.template.main.theme
 
 import android.app.Activity
 import android.os.Build

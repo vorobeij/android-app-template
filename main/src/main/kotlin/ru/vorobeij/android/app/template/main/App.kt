@@ -1,4 +1,4 @@
-package ru.vorobeij.android.app.android.template
+package ru.vorobeij.android.app.template.main
 
 import android.app.Application
 

@@ -1,4 +1,4 @@
-package ru.vorobeij.android.app.android.template
+package ru.vorobeij.android.app.template.main
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
@@ -7,7 +7,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import ru.vorobeij.android.app.android.template.ui.theme.AndroidAppTemplateTheme
+import ru.vorobeij.android.app.template.main.theme.AndroidAppTemplateTheme
 
 @Preview(
     showBackground = true,
