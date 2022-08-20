@@ -16,3 +16,5 @@ local.properties
 lint-report.*
 lint-results.txt
 lint-output.txt
+build/pluginUnderTestMetadata/
+build/

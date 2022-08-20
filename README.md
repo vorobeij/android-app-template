@@ -22,3 +22,8 @@
 ```shell
 sh ./ci/release.sh
 ```
+
+1. todo Gradle config lint
+2. todo kotlin code android lint
+3. todo fail on warnings
+4. todo kotlin detekt
