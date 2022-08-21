@@ -1,10 +1,5 @@
 # Template android project
 
-- [First things to do before starting](./wiki/first-things-to-do.md)
-- [Modules structure](./wiki/modules-structure.md)
-- [Libraries versions policy](./wiki/versions-policy.md)
-- [Unused dependencies management](./wiki/unused-dependencies.md)
-
 ## Features
 
 - kts build files
@@ -14,11 +9,11 @@
 - explicitly specify all module dependencies
   with [dependency-analysis-android-gradle-plugin](https://github.com/autonomousapps/dependency-analysis-android-gradle-plugin)
 
-## Check code correctness
+## Wiki
 
-```shell
-sh ./ci/release.sh
-```
-
-1. todo kotlin code android lint
-2. todo kotlin detekt
+1. [User gradle properties configuration](./wiki/gradle-user.md)
+1. [First things to do before starting](./wiki/first-things-to-do.md)
+1. [Libraries versions policy](./wiki/versions-policy.md)
+1. [Unused dependencies management](./wiki/unused-dependencies.md)
+1. [Check code correctness](./wiki/checks.md)
+1. [Modules structure](./wiki/modules-structure.md)

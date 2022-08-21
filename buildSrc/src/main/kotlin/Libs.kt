@@ -51,4 +51,5 @@ object Plugins {
     const val application = "com.android.application"
     const val kotlin_android = "org.jetbrains.kotlin.android"
     const val vorobeij = "ru.vorobeij"
+    const val dependency_analysis = "com.autonomousapps.dependency-analysis"
 }

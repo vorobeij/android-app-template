@@ -18,11 +18,9 @@ dependencies {
 // https://github.com/autonomousapps/dependency-analysis-android-gradle-plugin/wiki/Customizing-plugin-behavior
 dependencyAnalysis {
     issues {
-        // configure for all projects
-        // set behavior for all issue types
         ignoreKtx(true)
         onAny {
-            severity("fail") // default is 'warn'
+            severity("fail")
             exclude(
                 ":main",
                 "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
