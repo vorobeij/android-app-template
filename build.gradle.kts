@@ -5,10 +5,11 @@
         mavenCentral()
         gradlePluginPortal()
     }
+    // todo migrate to gradle.settings
     dependencies {
-        classpath("com.android.tools.build:gradle:${Versions.androidGradlePlugin}")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}")
-        classpath("com.autonomousapps:dependency-analysis-gradle-plugin:1.12.0")
+        classpath(Android.tools.build.gradlePlugin)
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:_")
+        classpath("com.autonomousapps:dependency-analysis-gradle-plugin:_")
     }
 }
 apply(plugin = "com.autonomousapps.dependency-analysis")
