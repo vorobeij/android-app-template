@@ -12,6 +12,7 @@ allprojects {
     project.tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
         kotlinOptions {
             jvmTarget = Versions.jvm.toString()
+            allWarningsAsErrors = true
         }
     }
 }
