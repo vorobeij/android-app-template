@@ -1,5 +1,5 @@
 ﻿plugins {
-    id("com.autonomousapps.dependency-analysis").version("1.12.0")
+    id("com.autonomousapps.dependency-analysis")
 }
 
 tasks.create<Delete>("clean") {
