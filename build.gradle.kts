@@ -1,18 +1,6 @@
-﻿buildscript {
-
-    repositories {
-        google()
-        mavenCentral()
-        gradlePluginPortal()
-    }
-    // todo migrate to gradle.settings
-    dependencies {
-        classpath(Android.tools.build.gradlePlugin)
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:_")
-        classpath("com.autonomousapps:dependency-analysis-gradle-plugin:_")
-    }
+﻿plugins {
+    id("com.autonomousapps.dependency-analysis").version("1.12.0")
 }
-apply(plugin = "com.autonomousapps.dependency-analysis")
 
 tasks.create<Delete>("clean") {
     delete(
