@@ -20,7 +20,6 @@ internal fun Project.configureLint() = this.extensions.getByType<BaseAppExtensio
         isNoLines = false
         isShowAll = true
         isExplainIssues = true
-        lintConfig = file("default-lint.xml")
         textReport = true
         textOutput = file("lint-output.txt")
         xmlReport = false
