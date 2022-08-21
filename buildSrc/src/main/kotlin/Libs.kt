@@ -17,6 +17,7 @@ object Libs {
 
     const val kotlin = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:_"
 
+    const val activity = "androidx.activity:activity:_"
     const val activity_compose = "androidx.activity:activity-compose:_"
     const val androidx_core = "androidx.core:core:_"
     const val androidx_core_ktx = "androidx.core:core-ktx:_"
@@ -34,11 +35,11 @@ object Libs {
 }
 
 object TestLibs {
+    const val compose_ui_test_junit4 = "androidx.compose.ui:ui-test-junit4:_"
+    const val compose_ui_test_manifest = "androidx.compose.ui:ui-test-manifest:_"
     const val espresso_core = "androidx.test.espresso:espresso-core:_"
     const val junit = "junit:junit:_"
     const val junit_test_ext = "androidx.test.ext:junit:_"
-    const val compose_ui_test_junit4 = "androidx.compose.ui:ui-test-junit4:_"
-    const val compose_ui_test_manifest = "androidx.compose.ui:ui-test-manifest:_"
 }
 
 object Runners {

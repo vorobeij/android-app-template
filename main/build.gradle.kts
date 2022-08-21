@@ -11,7 +11,7 @@ configureCompose()
 
 dependencies {
 
-    api(Libs.activity_compose)
+    api(Libs.activity)
     api(Libs.compose_runtime)
     api(Libs.material3)
     debugRuntimeOnly(TestLibs.compose_ui_test_manifest)
