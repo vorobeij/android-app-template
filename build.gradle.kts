@@ -1,5 +1,6 @@
 ﻿plugins {
     id(Plugins.dependency_analysis)
+    id("androidx.benchmark").version("1.1.0").apply(false)
 }
 
 tasks.create<Delete>("clean") {
@@ -14,6 +15,10 @@ allprojects {
             jvmTarget = Versions.jvm.toString()
             allWarningsAsErrors = true
         }
+    }
+    project.tasks.withType<JavaCompile> {
+        sourceCompatibility = Versions.jvm.toString()
+        targetCompatibility = Versions.jvm.toString()
     }
 }
 

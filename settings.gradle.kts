@@ -29,6 +29,6 @@ dependencyResolutionManagement {
 rootProject.name = "Android App Template"
 include(
     ":app",
-    ":main"
+    ":main",
+    ":microbenchmark"
 )
-
