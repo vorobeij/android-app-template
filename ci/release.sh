@@ -3,4 +3,5 @@
 # Check gradle configurations, build and run tests
 cd ..
 ./gradlew runChecks
-sh ./ci/benchmarks.sh
+cd ci
+sh ./microbenchmarks.sh
