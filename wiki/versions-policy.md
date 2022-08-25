@@ -14,6 +14,6 @@ To **update versions** run
 
 ## Adding new library
 
-1. add to [Libs.kt](../buildSrc/src/main/kotlin/Libs.kt)
+1. add to your `build.gradle.kts`
 2. run `./gradlew refreshVersionsMigrate`
 3. revert changes at [buildSrc/build.gradle.kts](../buildSrc/build.gradle.kts)
