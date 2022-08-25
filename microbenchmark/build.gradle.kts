@@ -31,3 +31,16 @@ dependencies {
     androidTestImplementation(Testing.junit4)
     androidTestImplementation(AndroidX.benchmark.junit4)
 }
+
+// https://github.com/autonomousapps/dependency-analysis-android-gradle-plugin/wiki/Customizing-plugin-behavior
+dependencyAnalysis {
+    issues {
+        onAny {
+            severity("fail")
+            exclude(
+                ":main",
+                "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+            )
+        }
+    }
+}
