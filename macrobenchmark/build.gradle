@@ -1,3 +1,10 @@
+/*
+TODO
+This file is *.gradle, because of `namespace` error.
+After conversion to kts `android.namespace` and `android.experimentalProperties` are not recognised.
+¯\_(ツ)_/¯
+ */
+
 plugins {
     id 'com.android.test'
     id 'kotlin-android'
