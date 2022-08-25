@@ -1,0 +1,62 @@
+plugins {
+    id 'com.android.test'
+    id 'kotlin-android'
+}
+
+android {
+
+    compileSdk 33
+    namespace 'ru.vorobeij.macrobenchmark'
+
+    defaultConfig {
+        minSdk 23
+        targetSdk 33
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_11.toString()
+    }
+
+    targetProjectPath = ":app"
+    experimentalProperties["android.experimental.self-instrumenting"] = true
+
+    buildTypes {
+
+        benchmark {
+            debuggable = true
+            signingConfig = debug.signingConfig
+            matchingFallbacks = ['release']
+        }
+    }
+}
+
+
+androidComponents {
+    beforeVariants(selector().all()) {
+
+        enabled = buildType == 'benchmark'
+    }
+}
+
+
+dependencies {
+
+    implementation Kotlin.stdlib
+    implementation AndroidX.test.ext.junit
+    implementation AndroidX.test.espresso.core
+    implementation AndroidX.test.uiAutomator
+
+    implementation AndroidX.benchmark.macroJunit4
+}
+
+
+tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
+    kotlinOptions {
+        freeCompilerArgs += "-opt-in=kotlin.RequiresOptIn"
+    }
+}

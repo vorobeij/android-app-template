@@ -5,6 +5,10 @@ pluginManagement {
         mavenCentral()
         maven { url = uri("https://plugins.gradle.org/m2/") }
     }
+    plugins {
+        id("com.android.test") version "7.2.2"
+        id("org.jetbrains.kotlin.android") version "1.7.10"
+    }
 }
 
 plugins {
@@ -30,5 +34,6 @@ rootProject.name = "Android App Template"
 include(
     ":app",
     ":main",
-    ":microbenchmark"
+    ":microbenchmark",
+    ":macrobenchmark"
 )

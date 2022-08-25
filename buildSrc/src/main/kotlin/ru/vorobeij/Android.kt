@@ -25,9 +25,16 @@ internal fun Project.configureAndroid() {
         }
 
         buildTypes {
-            getByName("release") {
-                isMinifyEnabled = true
-                proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
+            try {
+                getByName("release") {
+                    isMinifyEnabled = true
+                    proguardFiles(
+                        getDefaultProguardFile("proguard-android.txt"),
+                        "proguard-rules.pro"
+                    )
+                }
+            } catch (e: Exception) {
+                create("release") {}
             }
 
             getByName("debug") {

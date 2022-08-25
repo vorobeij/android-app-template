@@ -5,3 +5,4 @@ cd ..
 ./gradlew runChecks
 cd ci
 sh ./microbenchmarks.sh
+sh ./macrobenchmarks.sh
