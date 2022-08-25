@@ -1,6 +1,6 @@
 ﻿plugins {
     id(Plugins.dependency_analysis)
-    id("androidx.benchmark").version("1.1.0").apply(false)
+    id("androidx.benchmark").apply(false)
 }
 
 tasks.create<Delete>("clean") {
@@ -28,4 +28,7 @@ tasks.register<GradleBuild>("runChecks") {
         "buildHealth",
         "build"
     )
+    outputs
+        .dir(layout.buildDirectory.dir("runChecks"))
+        .withPropertyName("outputDir")
 }

@@ -1,5 +1,3 @@
-import ru.vorobeij.testDependencies
-
 plugins {
     id(Plugins.application)
     id(Plugins.kotlin_android)
@@ -15,7 +13,9 @@ android {
 
 dependencies {
     implementation(project(Projects.main))
-    testDependencies()
+    androidTestImplementation(AndroidX.test.ext.junit)
+    androidTestImplementation(AndroidX.test.espresso.core)
+    androidTestImplementation(AndroidX.compose.ui.testJunit4)
 }
 
 // https://github.com/autonomousapps/dependency-analysis-android-gradle-plugin/wiki/Customizing-plugin-behavior

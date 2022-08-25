@@ -26,8 +26,8 @@ android.defaultConfig.testInstrumentationRunner = "androidx.benchmark.junit4.And
 
 dependencies {
     implementation(project(":main"))
-    androidTestImplementation("androidx.test:runner:1.4.0")
-    androidTestImplementation("androidx.test.ext:junit:1.1.3")
-    androidTestImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.benchmark:benchmark-junit4:1.1.0")
+    androidTestImplementation(AndroidX.test.runner)
+    androidTestImplementation(AndroidX.test.ext.junit)
+    androidTestImplementation(Testing.junit4)
+    androidTestImplementation(AndroidX.benchmark.junit4)
 }
