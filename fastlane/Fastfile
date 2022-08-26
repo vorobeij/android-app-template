@@ -7,7 +7,7 @@ platform :android do
 
   desc "Build checks"
   lane :checks do
-    gradle(task: "diktatCheck clean buildHealth build")
+    gradle(task: "clean diktatCheck buildHealth build")
   end
 
   desc "Benchmarks"
