@@ -1,0 +1,24 @@
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:android)
+
+platform :android do
+
+  desc "Build checks"
+  lane :checks do
+    gradle(task: "clean buildHealth build")
+  end
+
+  desc "Benchmarks"
+  lane :benchmarks do
+    sh "sh ../ci/microbenchmarks.sh"
+    sh "sh ../ci/macrobenchmarks.sh"
+  end
+
+  desc "Deploy a new version to the Google Play"
+  lane :deploy do
+    gradle(task: "clean assembleRelease")
+    upload_to_play_store
+  end
+end

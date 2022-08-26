@@ -6,3 +6,4 @@
 2. todo script to change project name
    1. `Android App Template`
    2. package `ru.vorobeij.android.app.template`
+3. [Setup fastlane](../wiki/fastlane.md)
