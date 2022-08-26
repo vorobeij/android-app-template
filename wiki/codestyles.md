@@ -1,21 +1,26 @@
 # Code style
 
-[Diktat](https://github.com/saveourtool/diktat)
+- [Diktat docs](https://github.com/saveourtool/diktat)
+- Configure styles at [config](../diktat-analysis.yml)
 
-* Code styles for this project are set up with [config]()
-* Detekt plugin
-* Diktat
-* Ktlint
-* Custom rules module
-* Plugin errors on build and how handle them
-* code autoformat options
-  * uncommited files
-  * baseline configuration
-  * apply to whole project
+```shell
+./gradlew diktatCheck
+./gradlew diktatFix
+```
 
-## Why `detekt` vs `ktlint` vs `diktat`?
+## Why diktat?
+
+`detekt` vs `ktlint` vs `diktat`
 
 **Requirements**
 
-1. Compatible with gradle plugins api (`settings.gradle.kts`) (-detekt)
+1. Compatible with gradle plugins api (`settings.gradle.kts`) (detekt-)
 2. Configurable
+3. Autofix is actually working (detekt-)
+
+# TODO
+
+* code autoformat options
+    - uncommited files only
+    - baseline
+    - apply to whole project
