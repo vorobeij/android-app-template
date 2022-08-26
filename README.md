@@ -18,3 +18,4 @@
 5. [Check code correctness](./wiki/checks.md)
 6. [Modules structure](./wiki/modules-structure.md)
 7. [Benchmarks](./wiki/benchmarks.md)
+8. [Code styles](./wiki/codestyles.md)
