@@ -18,8 +18,7 @@ class SampleStartupBenchmark {
     val benchmarkRule = MacrobenchmarkRule()
 
     @Test
-    fun startup() = benchmarkRule.measureRepeated(
-        packageName = TARGET_PACKAGE,
+    fun startup() = benchmarkRule.measureRepeated(packageName = TARGET_PACKAGE,
         compilationMode = CompilationMode.None(),
         metrics = listOf(StartupTimingMetric()),
         iterations = 5,
