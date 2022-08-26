@@ -7,25 +7,25 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import ru.vorobeij.android.app.template.main.theme.AndroidAppTemplateTheme
+import ru.vorobeij.android.app.template.main.theme.androidAppTemplateTheme
 
 @Preview(
     showBackground = true,
     showSystemUi = true
 )
 @Composable
-fun MainApp() {
-    AndroidAppTemplateTheme {
+fun mainApp() {
+    androidAppTemplateTheme {
         Surface(
             modifier = Modifier.fillMaxSize(),
             color = MaterialTheme.colorScheme.background
         ) {
-            Greeting("Android")
+            greeting("Android")
         }
     }
 }
 
 @Composable
-fun Greeting(name: String) {
+fun greeting(name: String) {
     Text(text = "Hello $name!")
 }
