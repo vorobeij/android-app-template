@@ -162,7 +162,7 @@
   enabled: true
   configuration:
     # use logical imports grouping with sorting inside of a group
-    useRecommendedImportsOrder: true
+    useRecommendedImportsOrder: false
 # Checks that general order of code parts is right
 - name: FILE_INCORRECT_BLOCKS_ORDER
   enabled: true
