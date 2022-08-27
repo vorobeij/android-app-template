@@ -18,3 +18,4 @@ lint-results.txt
 lint-output.txt
 build/pluginUnderTestMetadata/
 build/
+/fastlane/report.xml

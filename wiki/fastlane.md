@@ -24,7 +24,7 @@ gem install bundler
 gem env home
 ```
 
-Add to `~/.zshrc`:
+Add to the end of `~/.zshrc`:
 
 ```shell
 # rbenv
