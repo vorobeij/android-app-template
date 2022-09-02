@@ -1,7 +1,8 @@
 #!/bin/sh
 
 # Input arguments
-BENCHMARK_RESULTS_OUTPUT=~/Desktop
+mkdir -p ../benchmarks/json
+BENCHMARK_RESULTS_OUTPUT=$(readlink -f ../benchmarks/json)
 PACKAGE_NAME=ru.vorobeij.android.app.benchmark.test
 
 # Private constants

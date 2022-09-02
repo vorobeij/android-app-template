@@ -19,3 +19,6 @@ lint-output.txt
 build/pluginUnderTestMetadata/
 build/
 /fastlane/report.xml
+/benchmarks/
+/benchmarks/json/*
+/fastlane/README.md

@@ -19,7 +19,7 @@ class SampleStartupBenchmark {
 
     @Test
     fun startup() = benchmarkRule.measureRepeated(packageName = TARGET_PACKAGE,
-        compilationMode = CompilationMode.None(),
+        compilationMode = CompilationMode.Full(),
         metrics = listOf(StartupTimingMetric()),
         iterations = 5,
         setupBlock = {

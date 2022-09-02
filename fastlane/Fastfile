@@ -17,6 +17,7 @@ platform :android do
   lane :benchmarks do
     sh "sh ../ci/microbenchmarks.sh"
     sh "sh ../ci/macrobenchmarks.sh"
+    sh "sh ../ci/analyse_benchmarks.sh"
   end
 
   desc "Deploy a new version to the Google Play"
