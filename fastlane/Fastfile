@@ -10,6 +10,7 @@ platform :android do
     gradle(task: "clean")
     gradle(task: "diktatCheck")
     gradle(task: "buildHealth")
+    gradle(task: "kotlinTestRule")
     gradle(task: "build")
   end
 

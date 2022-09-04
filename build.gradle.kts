@@ -32,11 +32,16 @@ allprojects {
     }
 }
 
+apply(from = "./ci/testrules/kotlin-tests-rule.gradle")
+
 tasks.register<GradleBuild>("runChecks") {
     tasks = listOf(
         "clean",
+        "kotlinTestRule",
+        "refreshVersions",
         "buildHealth",
-        "build"
+        "build",
+        "diktatFix"
     )
     outputs
         .dir(layout.buildDirectory.dir("runChecks"))

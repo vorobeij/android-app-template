@@ -19,3 +19,4 @@
 6. [Modules structure](./wiki/modules-structure.md)
 7. [Benchmarks](./wiki/benchmarks.md)
 8. [Code styles](./wiki/codestyles.md)
+9. [Test sources structure mirroring](./wiki/test-sources-structure-mirroring.md)
